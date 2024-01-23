@@ -38,28 +38,24 @@ th, td { border-bottom: 1px solid #ddd; text-align: left;}
 
 <div>
 
-    <img src="https://static.wixstatic.com/media/666060_88d74030839f4a0d911ed8823fe4da6f~mv2.jpg/v1/fill/w_193,h_142,fp_0.50_0.50,q_90,enc_auto/666060_88d74030839f4a0d911ed8823fe4da6f~mv2.jpg" alt="Logo" />
-    <img src="https://1.bp.blogspot.com/-VUC2tZtSNIs/WHPq4a1ZWXI/AAAAAAAAB4c/k9GTiD6VHR0UZ3jaVPF4V6CGkPrkNmkGACEw/s1600/instalacao-zabbix.png" alt="Logo" />
-
-    <div class="red"><h1>🤕INCIDENTE INICIADO🤕</h1></div>
+    <div class="red"><h1>🔥INCIDENTE INICIADO🔥</h1></div>
 
     <div class="light"><h4>INFORMACION DEL HOST ALERTADO</h4></div>
 
     <table>
       <tr><td style="width:30%"> </td>  <td> </td></tr>
-      <tr><td>Proxy:🤖</td>       <td>{PROXY.NAME}</td></tr>
+      <tr><td>Proxy:🤖</td>         <td>{PROXY.NAME}</td></tr>
       <tr><td>Nombre:💬</td>        <td>{HOST.NAME}</td></tr>
-      <tr><td>IP:💻</td>          <td>{HOST.CONN}</td></tr>
-      <tr><td>Descripcion:👀</td>   <td>{HOST.DESCRIPTION}</td></tr>
+      <tr><td>DNS:💻</td>           <td>{HOST.CONN}</td></tr>
     </table>
 
-    <div class="light"><h4>DETALLE DEL INCIDENTE</h4></div>
+    <div class="light"><h4>🔎DETALLE DEL INCIDENTE🔎</h4></div>
 
     <table>
       <tr><td style="width:30%"> </td>  <td> </td></tr>
       <tr><td>Incidente:🚨</td>   <td>{EVENT.NAME}</td></tr>
       <tr><td>Inicio:🕐</td>      <td>{EVENT.TIME} de {EVENT.DATE}</td></tr>
-      <tr><td>Severidad:🤔</td>  <td>{TRIGGER.SEVERITY}</td></tr>
+      <tr><td>Severidad:🚦</td>  <td>{TRIGGER.SEVERITY}</td></tr>
       <tr><td>Clave:🔑</td>       <td>{ITEM.KEY}</td></tr>
       <tr><td>Valor:💸</td>       <td>{ITEM.VALUE}</td></tr>
       <tr><td>Estado:⚖️</td>      <td>{TRIGGER.STATUS}</td></tr>
