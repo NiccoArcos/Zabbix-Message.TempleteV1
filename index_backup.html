@@ -1,66 +1,71 @@
-<table style="width: 570px; border-width: 1px; border-color: #c0c0c0; background-color: #e1e4e8; border-collapse: collapse; height: 632px;">
-    <tbody>
-        <tr>
-            <td style="width: 100%; border: 1px solid #c0c0c0;">
-                <table style="width: 566px; border-color: #c0c0c0; border-collapse: collapse; height: 641px; border-width: 0px;">
-                    <tbody>
-                        <tr>
-                            <td style="width: 100%; border-image: initial; border-color: #c0c0c0;">
-                                <table style="height: 54px; width: 550px; border-color: #000000; background-color: #ffffff; border-collapse: collapse; border-width: 0px; margin-left: auto; margin-right: auto;">
-                                    <tbody>
-                                        <tr>
-                                            <td style="width: 100%; border-color: #000000;">
-                                                <div style="text-align: center;"><img src="https://raw.githubusercontent.com/JulioZanette/zabbix-html-email-template/main/logoSample/LogoSample.png" alt="" style="width: 256px; height: 67px;" width="256" height="67"></div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table style="height: 323px; width: 550px; border-color: #000000; border-collapse: collapse; border-width: 0px; margin-left: auto; margin-right: auto;">
-                                    <tbody>
-                                        <tr>
-                                            <td style="width: 550px; background-color: #ffffff; border-color: #000000;">
-                                                <table style="width: 530px; border-color: #000000; background-color: #ffffff; border-collapse: collapse; border-width: 0px; margin-left: auto; margin-right: auto; height: 423px;">
-                                                    <tbody>
-                                                        <tr style="height: 61px;">
-                                                            <td style="width: 477px; text-align: left; background-color: #FF0000; height: 61px; border-color: #000000;" colspan="2">
-                                                                <p style="text-align: center;"><span style="color: #ffffff; font-size: 10pt; font-family: Arial;">&nbsp;<strong>&nbsp;<span style="font-size: 18pt;">⚠️Comenz&oacute; un Problema⚠️</span>&nbsp;</strong>&nbsp;</span></p>
-                                                                <p style="text-align: center;"><span style="font-family: Arial;">&nbsp;<strong>&nbsp;<span style="font-size: 14pt;">&nbsp;<span style="color: #ffffff;">{TRIGGER.SEVERITY}: {TRIGGER.NAME}</span>&nbsp;</span>&nbsp;</strong>&nbsp;</span></p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr style="height: 24px;">
-                                                            <td style="width: 477px; text-align: left; background-color: #96000A; height: 24px; border-color: #000000;" colspan="2">
-                                                                <div style="text-align: center;"><span style="font-size: 14pt;font-family: Arial; color:#ffff;">&nbsp;<strong>INFORMACI&Oacute;N DEL TRIGGER</strong></span></div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr style="height: 400px; text-align: left;">
-                                                            <td style="width: 165px; text-align: left; border-color: #000000;">
-                                                                <p style="text-align: left;"><span style="font-family: Arial;"><strong><span style="font-size: 10pt;"><strong><strong>&nbsp; Estado:</strong>&nbsp;</strong>&nbsp;</span>&nbsp;</strong>&nbsp;</span></p>
-                                                                <p style="text-align: left;"><span style="font-family: Arial;">&nbsp;<strong>&nbsp;<span style="font-size: 10pt;">Hora de Inicio:</span>&nbsp;</strong>&nbsp;</span></p>
-                                                                <p style="text-align: left;"><span style="font-family: Arial;">&nbsp;<strong>&nbsp;<span style="font-size: 10pt;"><strong><strong style="color: #222222; font-family: Arial, Helvetica, sans-serif; font-size: small; text-decoration-color: initial;">Duraci&oacute;n:</strong>&nbsp;</strong>&nbsp;</span>&nbsp;</strong>&nbsp;</span></p>
-                                                                <p style="text-align: left;"><span style="font-family: Arial;">&nbsp;<strong>&nbsp;<span style="font-size: 10pt;"><strong>Severidad:</strong>&nbsp;</span>&nbsp;</strong>&nbsp;</span></p>
-                                                                <p style="text-align: left;"><span style="font-family: Arial;">&nbsp;<strong>&nbsp;</strong></span><span style="font-family: Arial;"><strong><span style="font-size: 10pt;"><strong><strong>Ultimo Valor:</strong>&nbsp;</strong>&nbsp;</span>&nbsp;</strong>&nbsp;</span></p>
-                                                                <p style="text-align: left;"><span style="font-family: Arial;">&nbsp;<strong>&nbsp;<span style="font-size: 10pt;"><strong><strong><strong><strong>Descripcion:</strong>&nbsp;</strong>&nbsp;</strong>&nbsp;</strong>&nbsp;</span>&nbsp;</strong>&nbsp;</span></p>
-                                                            </td>
-                                                            <td style="width: 358px; text-align: left; border-color: #000000;">
-                                                                <p style="text-align: left;"><span style="font-size: 10pt; font-family: Arial;"><br>&nbsp;<br>{TRIGGER.STATUS}&nbsp;<br></span></p>
-                                                                <p style="text-align: left;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;<br>at {EVENT.TIME} on {EVENT.DATE}&nbsp;</span></p>
-                                                                <p style="text-align: left;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;<br>{EVENT.DURATION}&nbsp;<br></span></p>
-                                                                <p style="text-align: left;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;<br>{TRIGGER.SEVERITY}&nbsp;</span></p>
-                                                                <p style="text-align: left;"><span style="font-family: Arial;">&nbsp;</span><span style="font-family: Arial;"><span style="font-size: 10pt;"><br>{ITEM.VALUE1}</span>&nbsp;</span></p>
-                                                                <p style="text-align: left;"><span style="font-family: Arial;">&nbsp;<span style="padding:px 36px 10px 36px;font-size: 10pt;"><br>{TRIGGER.DESCRIPTION}&nbsp;<br></span>&nbsp;</span></p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr style="height: 23px;">
-                                                            <td style="width: 477px; background-color: #ffad33; text-align: center; height: 18px; border-color: #000000;" colspan="2"><span style="font-size: 14pt; font-family: Arial;">&nbsp;<strong>INFORMACION &nbsp;<strong>DEL HOST</strong>&nbsp;</strong>&nbsp;</span></td>
-                                                        </tr>
-                                                        <tr style="height: 128px; text-align: left;">
-                                                            <td style="width: 165px; text-align: left; border-color: #000000;">
-                                                                <p style="text-align: left;"><span style="font-family: Arial;">&nbsp;<strong>&nbsp;<span style="font-size: 13.3333px;">Name:</span>&nbsp;</strong>&nbsp;</span></p>
-                                                                <p style="text-align: left;"><span style="font-family: Arial;">&nbsp;<strong>&nbsp;<span style="font-size: 13.3333px;"><strong>Uptime:</strong>&nbsp;</span>&nbsp;</strong>&nbsp;</span></p>
-                                                                <p style="text-align: left;"><span style="font-family: Arial;">&nbsp;<strong>&nbsp;<span style="font-size: 13.3333px;">CPU:</span>&nbsp;</strong>&nbsp;</span></p>
-                                                                <p style="text-align: left;"><span style="font-family: Arial;">&nbsp;<strong>&nbsp;<span style="font-size: 13.3333px;">Memory:</span>&nbsp;</strong>&nbsp;</span></p>
-                                                            </td>
-                                                            <td style="width: 358px; text-align: left; border-color: #000000;">
-                                                                <p style="text-align: left;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;{HOST.NAME1} ({HOST.IP1})&nbsp;</span></p>
-                                                                <p style="text-align: left;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;{{HOST.HOST}:system.uptime.last()}&nbsp;</span></p><p style="text-align: left;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;{{HOST.HOST}:system.cpu.util.last()}&nbsp;</span></p><p style="text-align: left;"><span style="font-size: 10pt; font-family: Arial;">&nbsp;{{HOST.HOST}:vm.memory.utilization.last()}&nbsp;</span></p></td></tr></tbody></table></td></tr></tbody></table><table style="height: 60px; width: 550px; border-color: #000000; border-collapse: collapse; border-width: 0px; margin-left: auto; margin-right: auto;"><tbody><tr><td style="width: 542px; border-color: #000000;"><table style="height: 44px; width: 328px; border-color: #000000; border-collapse: collapse; border-width: 0px; margin-left: auto; margin-right: auto;"><tbody><tr style="text-align: center;"><td style="width: 12.6111%; background-color: #ff0000; border-color: #000000;"><span style="font-family: Arial;">&nbsp;<strong>&nbsp;<span style="color: #ffffff; font-size: 24pt;">&nbsp;Z&nbsp;</span>&nbsp;</strong>&nbsp;</span></td><td style="width: 87.3889%; border-color: #000000;"><span style="font-family: Arial; font-size: 18pt;">&nbsp;<strong>Zabbix Monitoring</strong>&nbsp;</span></td></tr></tbody></table></td></tr></tbody></table><table style="width: 550px; border-color: #000000; background-color: #646d7e; border-collapse: collapse; height: 27px; border-width: 0px; margin-left: auto; margin-right: auto;"><tbody><tr><td style="width: 100%; text-align: center; border-color: #000000;"><span style="color: #ffffff; font-size: 10pt; font-family: Arial;">&nbsp;Copyright&copy; 2021 - **** Company Name&nbsp;</span></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><div style="color: red; font-size: 12px; width: 600px; margin: 0 auto; text-align: center;">Prueba Word to HTML - <a href="https://wordtohtml.net/site/payment">P&aacute;sate a PRO</a>.</div>
-<div style="color: red; font-size: 12px; width: 600px; margin: 0 auto; text-align: center;">Prueba Word to HTML - <a href="https://wordtohtml.net/site/payment">P&aacute;sate a PRO</a>.</div>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Monitoreo de Zabbix</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<style>
+div {
+  border: 3px solid LightGray;
+  margin: auto;
+  max-width: 700px;
+  padding: 2px 20px 2px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+div div { margin: 0; padding: 0; border: 0;}
+
+img { max-width: 328px; }
+h1, h2, h3, h5, h6 { color: White; }
+h4 { color: black; }
+
+table { width: 100%; }
+tr:nth-child(even){ background-color: #f2f2f2; }
+tr:hover { background-color: #ddd; }
+th, td { border-bottom: 1px solid #ddd; text-align: left;}
+
+.green { background-color: ForestGreen; }
+.red { background-color: Tomato; }
+.blue { background-color: LightBlue; }
+.gray { background-color: Gray; color:White; }
+.light { background-color:LightGray; }
+</style>
+
+</head>
+
+<body>
+
+<div>
+
+    <img src="https://static.wixstatic.com/media/666060_88d74030839f4a0d911ed8823fe4da6f~mv2.jpg/v1/fill/w_193,h_142,fp_0.50_0.50,q_90,enc_auto/666060_88d74030839f4a0d911ed8823fe4da6f~mv2.jpg" alt="Logo" />
+    <img src="https://1.bp.blogspot.com/-VUC2tZtSNIs/WHPq4a1ZWXI/AAAAAAAAB4c/k9GTiD6VHR0UZ3jaVPF4V6CGkPrkNmkGACEw/s1600/instalacao-zabbix.png" alt="Logo" />
+
+    <div class="red"><h1>🤕INCIDENTE INICIADO🤕</h1></div>
+
+    <div class="light"><h4>INFORMACION DEL HOST ALERTADO</h4></div>
+
+    <table>
+      <tr><td style="width:30%"> </td>  <td> </td></tr>
+      <tr><td>Proxy:🤖</td>       <td>{PROXY.NAME}</td></tr>
+      <tr><td>Nombre:💬</td>        <td>{HOST.NAME}</td></tr>
+      <tr><td>IP:💻</td>          <td>{HOST.CONN}</td></tr>
+      <tr><td>Descripcion:👀</td>   <td>{HOST.DESCRIPTION}</td></tr>
+    </table>
+
+    <div class="light"><h4>DETALLE DEL INCIDENTE</h4></div>
+
+    <table>
+      <tr><td style="width:30%"> </td>  <td> </td></tr>
+      <tr><td>Incidente:🚨</td>   <td>{EVENT.NAME}</td></tr>
+      <tr><td>Inicio:🕐</td>      <td>{EVENT.TIME} de {EVENT.DATE}</td></tr>
+      <tr><td>Severidad:🤔</td>  <td>{TRIGGER.SEVERITY}</td></tr>
+      <tr><td>Clave:🔑</td>       <td>{ITEM.KEY}</td></tr>
+      <tr><td>Valor:💸</td>       <td>{ITEM.VALUE}</td></tr>
+      <tr><td>Estado:⚖️</td>      <td>{TRIGGER.STATUS}</td></tr>
+    </table>
+
+</div>
+
+</body>
+</html>
